@@ -75,3 +75,6 @@ jobs:
         with:
           name: codeql-results # Specify the name of the artifact you want to download
           path: /home/runner/work/apollo/results/ # Specify the directory where you want to save the downloaded artifact
+
+      - name: Print Run ID
+        run: echo "workflow run id ${{github.run_id}}"
